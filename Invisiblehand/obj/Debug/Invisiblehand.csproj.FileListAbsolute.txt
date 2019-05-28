@@ -13,3 +13,17 @@ C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\Microsoft.Vis
 C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\ko\Microsoft.VisualBasic.PowerPacks.resources.dll
 C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CopyComplete
 C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.Invisible_hand.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csprojAssemblyReference.cache
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.CalibrationPopupForm.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.Invisible_hand.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.Form3.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.Properties.Resources.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csproj.GenerateResource.cache
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CoreCompileInputs.cache
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.exe
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.pdb
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\bin\Debug\Invisiblehand.exe.config
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\bin\Debug\Invisiblehand.exe
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\bin\Debug\Invisiblehand.pdb
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\bin\Debug\ko\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CopyComplete

@@ -1,4 +1,6 @@
-﻿namespace Invisiblehand
+﻿using System;
+
+namespace Invisiblehand
 {
     partial class Invisible_hand
     {

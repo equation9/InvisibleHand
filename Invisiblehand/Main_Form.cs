@@ -21,7 +21,7 @@ namespace Invisiblehand
 
         private void rectangleShape1_Click(object sender, EventArgs e)
         {
-            Form2 dlg = new Form2();
+            CalibrationForm dlg = new CalibrationForm();
             dlg.ShowDialog();
         }
 
@@ -33,7 +33,7 @@ namespace Invisiblehand
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Form2 dlg = new Form2();
+            CalibrationForm dlg = new CalibrationForm();
             dlg.ShowDialog();
         }
 
@@ -45,7 +45,7 @@ namespace Invisiblehand
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form2 dlg = new Form2();
+            CalibrationForm dlg = new CalibrationForm();
             dlg.ShowDialog();
         }
 
