@@ -1,0 +1,15 @@
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\Invisiblehand.exe.config
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\Invisiblehand.exe
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\Invisiblehand.pdb
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.csprojAssemblyReference.cache
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.Properties.Resources.resources
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.csproj.GenerateResource.cache
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CoreCompileInputs.cache
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.exe
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.pdb
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.Form2.resources
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.Form3.resources
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\bin\Debug\ko\Microsoft.VisualBasic.PowerPacks.resources.dll
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CopyComplete
+C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand.Invisible_hand.resources
