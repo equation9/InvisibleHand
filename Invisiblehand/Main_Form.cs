@@ -27,7 +27,7 @@ namespace Invisiblehand
 
         private void rectangleShape2_Click_1(object sender, EventArgs e)
         {
-            Form3 dlg = new Form3();
+            VideoCaptureControl dlg = new VideoCaptureControl();
             dlg.ShowDialog();
         }
 
@@ -39,7 +39,7 @@ namespace Invisiblehand
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form3 dlg = new Form3();
+            VideoCaptureControl dlg = new VideoCaptureControl();
             dlg.ShowDialog();
         }
 
@@ -51,7 +51,7 @@ namespace Invisiblehand
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form3 dlg = new Form3();
+            VideoCaptureControl dlg = new VideoCaptureControl();
             dlg.ShowDialog();
         }
 
