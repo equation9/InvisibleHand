@@ -16,7 +16,6 @@ C:\Users\정우\source\repos\Invisiblehand\Invisiblehand\obj\Debug\Invisiblehand
 C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csprojAssemblyReference.cache
 C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.CalibrationPopupForm.resources
 C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.Invisible_hand.resources
-C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.Form3.resources
 C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.Properties.Resources.resources
 C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csproj.GenerateResource.cache
 C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CoreCompileInputs.cache
@@ -46,3 +45,11 @@ C:\Users\equat\Source\Repos\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.
 C:\Users\equat\Source\Repos\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.csproj.CopyComplete
 C:\Users\equat\Source\Repos\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.exe
 C:\Users\equat\Source\Repos\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.pdb
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\VideoCaptureControl.g.cs
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand_Content.g.cs
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand_MarkupCompile.cache
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand_MarkupCompile.lref
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\VideoCaptureControl.baml
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.g.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.CalibrationForm.resources
+C:\Users\vplayv\Documents\GitHub\InvisibleHand\Invisiblehand\obj\Debug\Invisiblehand.CalibrationFailForm.resources

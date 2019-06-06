@@ -14,11 +14,13 @@ namespace Invisiblehand
         private static int[,] SamplePoint = new int[NumberOfPoint, 2]; // 실제 포인팅 위치
         private static double KX1, KX2, KX3, KY1, KY2, KY3; // 캘리브레이션 알고리즘에서 사용됨
         private int SettingCount = 0; // 현재 클릭된 버튼 갯수
+        private Button[] array; // 버튼을 배열로 사용하기 위함
 
         public CalibrationForm()
         {
             InitializeComponent();
             InitalizePoint();
+            InitalizeArray();
             InitalizeButton();
         }
 
@@ -40,56 +42,74 @@ namespace Invisiblehand
             KY3 = 0;
         }
 
+        void InitalizeArray()
+        {
+            // 버튼을 배열로 사용(처음에 잘못짬)
+            array = new Button[NumberOfPoint + 1];
+            array[1] = button1;
+            array[2] = button2;
+            array[3] = button3;
+            array[4] = button4;
+            array[5] = button5;
+            array[6] = button6;
+            array[7] = button7;
+            array[8] = button8;
+            array[9] = button9;
+        }
+
         void InitalizeButton()
         {
+            // 설정된 버튼의 수 초기화
             SettingCount = 0;
-            button1.BackColor = SystemColors.Control;
-            button1.Text = "*";
-            button2.BackColor = SystemColors.Control;
-            button2.Text = "*";
-            button3.BackColor = SystemColors.Control;
-            button3.Text = "*";
-            button4.BackColor = SystemColors.Control;
-            button4.Text = "*";
-            button5.BackColor = SystemColors.Control;
-            button5.Text = "*";
-            button6.BackColor = SystemColors.Control;
-            button6.Text = "*";
-            button7.BackColor = SystemColors.Control;
-            button7.Text = "*";
-            button8.BackColor = SystemColors.Control;
-            button8.Text = "*";
-            button9.BackColor = SystemColors.Control;
-            button9.Text = "*";
+
+            // 버튼 1번 부터 유도하기
+            array[1].BackColor = Color.DodgerBlue;
+            array[1].Text = "1";
+
+            // 버튼 2번 부터는 White로 설정
+            for (int i = 2; i <= NumberOfPoint; i++)
+            {
+                array[i].BackColor = Color.White;
+                array[i].Text = i.ToString();
+            }
         }
+
         // 캘리브레이션 클릭
         private void CalibrationClick(object sender, EventArgs e)
         {
             Button triggeredButton = (Button)sender;
 
-            // 색깔 변화
-            if (triggeredButton.BackColor == SystemColors.Control)
+            // DodgerBlue 버튼이 눌려야 하는 버튼이다.
+            if (triggeredButton.BackColor == Color.DodgerBlue)
             {
+                // 눌린 버튼의 색깔을 바꿈
                 triggeredButton.BackColor = SystemColors.ControlDark;
                 triggeredButton.Text = "OK";
 
+                // 현재 눌린 버튼이 번호
                 int i = Convert.ToInt32(triggeredButton.Name.Substring(6));
-                i -= 1;
+
+                // 다음 버튼 색깔을 유도함
+                if (i < NumberOfPoint)
+                    array[i + 1].BackColor = Color.DodgerBlue;
+
+                // 눌린 버튼의 - 1 (위의 일부 데이터들때문)
+                int j = i - 1;
 
                 // 이상 위치
                 Point buttonPoint = triggeredButton.Parent.PointToScreen(triggeredButton.Location);
-                ReferencePoint[i, 0] = (buttonPoint.X + triggeredButton.Size.Width / 2);
-                ReferencePoint[i, 1] = (buttonPoint.Y + triggeredButton.Size.Height / 2);
-
-                string idealine = "Ideal Point : " + ReferencePoint[i, 0].ToString() + ", " + ReferencePoint[i, 1].ToString();
-                Debug.WriteLine(idealine);
+                ReferencePoint[j, 0] = (buttonPoint.X + triggeredButton.Size.Width / 2);
+                ReferencePoint[j, 1] = (buttonPoint.Y + triggeredButton.Size.Height / 2);
 
                 // 실제 위치
                 int CursorX = Cursor.Position.X;
                 int CursorY = Cursor.Position.Y;
-                SamplePoint[i, 0] = CursorX;
-                SamplePoint[i, 1] = CursorY;
+                SamplePoint[j, 0] = CursorX;
+                SamplePoint[j, 1] = CursorY;
 
+                // 디버그용 
+                string idealine = "Ideal Point : " + ReferencePoint[j, 0].ToString() + ", " + ReferencePoint[j, 1].ToString();
+                Debug.WriteLine(idealine);
                 string sampleline = "sample Point : " + CursorX.ToString() + ", " + CursorY.ToString();
                 Debug.WriteLine(sampleline);
 
@@ -97,14 +117,8 @@ namespace Invisiblehand
                 SettingCount++;
             }
             else
-            {
-                triggeredButton.BackColor = SystemColors.Control;
-                triggeredButton.Text = "*";
+                ShowFailPopup();
 
-                //세팅 수 감소
-                SettingCount--;
-            }
-;
             // 9개가 모두 선택되면 팝업 호출
             if (SettingCount >= NumberOfPoint)
                 ShowPopup();
@@ -144,6 +158,25 @@ namespace Invisiblehand
                 this.Dispose();
         }
 
+        private void ShowFailPopup()
+        {
+            // 실패 팝업
+            CalibrationFailForm popup = new CalibrationFailForm();
+
+            // 팝업을 정 가운데로 호출
+            popup.StartPosition = FormStartPosition.Manual;
+            popup.Location = new Point(this.Width / 2 - popup.Width / 2, this.Height / 2 - popup.Height / 2);
+
+            DialogResult dialogresult = popup.ShowDialog();
+
+            // 실패 버튼 클릭
+            if (dialogresult == DialogResult.Cancel)
+            {
+                Console.WriteLine("Calibration Fail. Please Retry.");
+                InitalizePoint();
+                InitalizeButton();
+            }
+        }
         // Write CSV
         void WriteCalibrationFile()
         {
