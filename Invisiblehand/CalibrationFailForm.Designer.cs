@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalibrationFailForm));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -41,7 +42,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(263, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "캘리브레이션 설정이 실패했습니다.";
+            this.label1.Text = "캘리브레이션 설정에 실패했습니다.";
             // 
             // button1
             // 
@@ -49,7 +50,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "OK";
+            this.button1.Text = "재시도";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // CalibrationFailForm
@@ -59,6 +60,7 @@
             this.ClientSize = new System.Drawing.Size(304, 76);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalibrationFailForm";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Text = "Retry";
