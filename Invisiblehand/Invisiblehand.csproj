@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2656583e5773532909_0zB_icon.ico" />
+    <None Include="Resources\2656583E5773532909.png" />
     <None Include="Resources\hi_3.png" />
     <None Include="Resources\hi_2.jpg" />
     <None Include="Resources\ddabong.png" />

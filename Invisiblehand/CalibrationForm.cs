@@ -120,8 +120,10 @@ namespace Invisiblehand
                 SettingCount++;
             }
             else
-                ShowFailPopup();
-
+               
+            ShowFailPopup();
+            
+            
             // 9개가 모두 선택되면 팝업 호출
             if (SettingCount >= NumberOfPoint)
                 ShowPopup();
@@ -163,6 +165,11 @@ namespace Invisiblehand
 
         private void ShowFailPopup()
         {
+            for (int k = 1; k <= SettingCount; k++)
+            {
+                array[k].Image = Properties.Resources.no_1;
+            }
+
             // 실패 팝업
             CalibrationFailForm popup = new CalibrationFailForm();
 
