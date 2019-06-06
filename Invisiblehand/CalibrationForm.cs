@@ -65,12 +65,15 @@ namespace Invisiblehand
             // 버튼 1번 부터 유도하기
             array[1].BackColor = Color.DodgerBlue;
             array[1].Text = "1";
+            array[1].Image = null;
 
             // 버튼 2번 부터는 White로 설정
             for (int i = 2; i <= NumberOfPoint; i++)
             {
                 array[i].BackColor = Color.White;
                 array[i].Text = i.ToString();
+                array[i].Image = null;
+                
             }
         }
 
@@ -84,7 +87,7 @@ namespace Invisiblehand
             {
                 // 눌린 버튼의 색깔을 바꿈
                 triggeredButton.BackColor = SystemColors.ControlDark;
-                triggeredButton.Text = "OK";
+                triggeredButton.Image = Image.FromFile(@"C:\hi_3.png");
 
                 // 현재 눌린 버튼이 번호
                 int i = Convert.ToInt32(triggeredButton.Name.Substring(6));
