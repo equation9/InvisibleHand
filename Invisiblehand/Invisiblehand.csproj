@@ -108,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,6 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2656583e5773532909_0zB_icon.ico" />
+    <None Include="Resources\hi_3.png" />
+    <None Include="Resources\hi_2.jpg" />
+    <None Include="Resources\ddabong.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="VideoCaptureControl.xaml">

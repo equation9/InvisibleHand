@@ -87,7 +87,7 @@ namespace Invisiblehand
             {
                 // 눌린 버튼의 색깔을 바꿈
                 triggeredButton.BackColor = SystemColors.ControlDark;
-                triggeredButton.Image = Image.FromFile(@"C:\hi_3.png");
+                triggeredButton.Image = Properties.Resources.hi_3;
 
                 // 현재 눌린 버튼이 번호
                 int i = Convert.ToInt32(triggeredButton.Name.Substring(6));
