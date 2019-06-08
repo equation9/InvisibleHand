@@ -42,7 +42,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(263, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "캘리브레이션 설정이 실패했습니다.";
+            this.label1.Text = "캘리브레이션 설정에 실패했습니다.";
             // 
             // button1
             // 
@@ -50,7 +50,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "OK";
+            this.button1.Text = "재시도";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // CalibrationFailForm
